@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<style>
+    /* internal css */
+    .Apple_Products{
+        padding: 105px 0px 0 113px;
+    }
+    .Apple_Products ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 150px;
+    }
+    .Apple_Products img{
+        height: 430px;
+        width: 280px;
+    }
+    h2{
+        margin-left: 490px;
+        font-size: 35px;
+    }
+    .desc p{
+        font-size: 23px;
+    margin: 6px;
+    font-weight: bold;
+    }
+    button.buy{
+        margin: 10px 75px;
+        font-size: 16px;
+        background-color: #ff511a;
+        border: 1px solid #ff511a;
+        opacity: 0.6;
+        transition: 0.4s;
+    }
+    button.buy:hover{
+        opacity: 1;
+    }
+</style>
+<body>
+    <div class="products">
+        <!-- header starts with nav -->
+        <div class="header">
+            <img src="/images/logo.png" height="65px" width="75px" style="margin-left: 100px;" alt="nav-logo">
+            <h5 style="color: #FFFF; margin:21px 10px 0px 34px; font-size: 25px;">MOBLEX</h5>
+            <nav>
+                <ul>
+                    <li><a href="/html/index.html">HOME</a></li>
+                    <li><a href="#" class="active">PRODUCTS</a></li>
+                    <li><a href="/html/blog.html">BLOG</a></li>
+                    <li><a href="/html/research.html">RESEARCH</a></li>
+                    <li> <a href="/html/index.html"><button>CONTACT</button></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- header ends -->
+        <div class="Apple_Products">
+            <!-- products page starts with products -->
+            <h2>APPLE PRODUCTS</h2>
+            <ul>
+                <li>
+                    <div class="desc">
+                        <img src="/images/ip 13.png" alt="">
+                        <div class="flex" style="display:flex;">
+                            <p>Iphone 13</p>
+                            <p style="margin-left: 60px;">$699</p>
+                        </div>
+                <!-- calling function on clicking button -->
+                        <button class="buy" onclick="contact()">Buy</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="desc">
+                        <img src="/images/ip13pro.png" alt="">
+                        <div class="flex" style="display:flex;">
+                            <p>Iphone 13 pro</p>
+                            <p style="margin-left: 40px;">$1,099</p>
+                        </div>
+                <!-- calling function on clicking button -->
+                        <button class="buy" onclick="contact()">Buy</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="desc">
+                        <img src="/images/ip13promax.png" alt="">
+                        <div class="flex" style="display:flex;">
+                            <p>Iphone 13 pro max</p>
+                            <p class="price">$999</p>
+                        </div>
+                <!-- calling function on clicking button -->
+                        <button class="buy" onclick="contact()">Buy</button>
+                    </div>
+                </li>
+            </ul>
+            <h2 style="padding-top: 10px;">SAMSUNG PRODUCTS</h2>
+            <ul>
+                <li>
+                    <div class="desc">
+                        <img src="/images/galaxys22.png" alt="">
+                        <div class="flex" style="display:flex;">
+                            <p>Galaxy 22</p>
+                            <p style="margin-left: 60px;">$799</p>
+                        </div>
+                <!-- calling function on clicking button -->
+                        <button class="buy" onclick="contact()">Buy</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="desc">
+                        <img src="/images/galaxys22+.png" alt="">
+                        <div class="flex" style="display:flex;">
+                            <p>Galaxy 22 plus</p>
+                            <p style="margin-left: 40px;">$999</p>
+                        </div>
+                <!-- calling function on clicking button -->
+                        <button class="buy" onclick="contact()">Buy</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="desc">
+                        <img src="/images/galaxys22ultra.png" alt="">
+                        <div class="flex" style="display:flex;">
+                            <p>Galaxy 22 ultra</p>
+                            <p class="price">$1,199</p>
+                        </div>
+                <!-- calling function on clicking button -->
+                        <button class="buy" onclick="contact()">Buy</button>
+                    </div>
+                </li>
+            </ul>
+            <!-- end products -->
+        </div>
+    </div>
+    <script>
+        function contact(){
+            window.location.href="contact.html";
+        }
+    </script>
+</body>
+</html>

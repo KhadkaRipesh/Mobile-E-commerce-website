@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external css with link -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+    <div id="research">
+        <!-- header starts with nav -->
+        <div class="header">
+            <img src="/images/logo.png" height="65px" width="75px" style="margin-left: 100px;" alt="nav-logo">
+            <h5 style="color: #FFFF; margin:21px 10px 0px 34px; font-size: 25px;">MOBLEX</h5>
+            <nav>
+                <ul>
+                    <li><a href="/html/index.html">HOME</a></li>
+                    <li><a href="/html/product.html">PRODUCTS</a></li>
+                    <li><a href="/html/blog.html">BLOG</a></li>
+                    <li><a href="/html/research.html">RESEARCH</a></li>
+                    <li> <a href="/html/contact.html"class="active"><button>CONTACT</button></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- header ends -->
+        <div id="contactpage">
+            <!-- left box starts -->
+            <div class="page1">
+                <div class="first">
+                    <p>CONTACT US</p>
+                    <hr>
+                    <br>
+                </div>
+                <div class="second">
+                    <img src="/images/log.png" alt="">
+                    <p class="head">MOBLEX STORE</p>
+                    <P>Ithari-9 Nepal,202205</P>
+                    <hr>
+                    <br>
+                </div>
+                <div class="third">
+                    <img src="/images/help.png" alt="">
+                    <p class="head1">HELP & SUPPORT</p>
+                    <p>(+977)98746898 | 9812345557</p>
+                    <a href="mailto:contact.moblex@gmail.com"><p class="head2">contact.moblex@gmail.com</p></a>
+                    
+                </div>
+            </div>
+            <!-- left box ends -->
+            <!-- right box start -->
+            <div class="page2">
+                <p>Get in touch</p>
+                <div class="side">
+                    <div class="side1">
+                        <h5>First name</h5>
+                        <input type="text" name="firstname" id="fname">
+                        <p id="demo"> </p>
+                        <h5 style="margin-top: -20px;">Address</h5>
+                        <input type="text" name="address" id="address">
+                        <p id="demo1"> </p>
+                    </div>
+                    <div class="side2">
+                        <h5>Last Name</h5>
+                        <input type="text" name="lastname" id="Lname">
+                        <p id="demo3"></p><br>
+                        <h5 style="margin-top: -40px;">Email</h5>
+                        <input type="text" name="Email" id="mail">
+                        <p id="demo3"></p>
+                    </div>
+                </div>
+                <div class="input">
+                    <h5>Which brand mobile do you want to purchase?</h5>
+                        <input type="text" name="select" id="number">
+                        <p id="demo4"></p><br>
+                        <h5 style="margin-top: -40px ; margin-bottom: 5px;">What can we help with?</h5>
+                        <textarea name="message" id="result" cols="60" rows="5"></textarea>
+                </div>
+                <button onclick="js()" style="color: #ffff; cursor:pointer; ">Send</button>
+            </div>
+            <!-- right box end -->
+        </div>
+    </div>
+    <!-- external js with link -->
+    <script src="/js/form.js"></script>
+</body>
+</html>
